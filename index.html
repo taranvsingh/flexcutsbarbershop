@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <title>Barber Shop Winnipeg, MB | FlexCuts</title>
+    <link rel="icon" href="/Assets/faviconfc.svg" type="image/svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Assets/faviconfc.svg">
+
+    <meta name="description" content="Flex Cuts Barbershop – Winnipeg’s go-to spot for precision haircuts and premium grooming. Since 2015, we've delivered expert fades, beard trims, and modern styles. Book now or walk in at 660 Osborne St. Call (204) 306-6044. Open Mon-Sat: 10AM-7PM.">
+
+    <meta property="og:title" content="Flex Cuts Barbershop – Winnipeg’s Top Grooming Spot">
+    <meta property="og:description" content="Looking sharp starts here! Get expert haircuts and beard trims at Flex Cuts Barbershop. Visit us at 660 Osborne St, Winnipeg. Call (204) 306-6044.">
+    <meta property="og:image" content="/Assets/mainlogo.png">
+    <meta property="og:url" content="https://flexcutsbarbershop.com">
+    <meta property="og:type" content="website">
+
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Barbershop",
+          "name": "Flex Cuts Barbershop",
+          "description": "Flex Cuts Barbershop is Winnipeg’s go-to destination for modern men's grooming, haircuts, and beard trims.",
+          "image": "https://yourwebsite.com/path-to-image.jpg",
+          "url": "https://yourwebsite.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "660 Osborne St",
+            "addressLocality": "Winnipeg",
+            "addressRegion": "MB",
+            "postalCode": "R3L 2B6",
+            "addressCountry": "CA"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "49.8600",
+            "longitude": "-97.1400"
+          },
+          "telephone": "+1-204-306-6044",
+          "openingHours": [
+            "Mo-Sa 10:00-19:00"
+          ],
+          "priceRange": "$$",
+          "sameAs": [
+            "https://www.instagram.com/yourbarbershop",
+            "https://www.facebook.com/yourbarbershop"
+          ]
+        }
+        </script>
+        
+</head>
+
+<body class>
+    <section class="bg-[url('./Assets/bg2img.png')] bg-center sticky top-0 z-[999] flex w-full items-center lg:min-h-18 lg:px-[5%] bg-white border-b border-black">
+        <div
+            class="mx-auto size-full lg:grid lg:grid-cols-[0.375fr_1fr_0.375fr] lg:items-center lg:justify-between lg:gap-4">
+            <div class="flex mt-5 mb-5 min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
+                <a href="#home"><img src="/Assets/mainlogo.png" alt="Logo image" class="h-20 w-auto object-contain" /></a>
+                <div class="flex items-center gap-4 lg:hidden">
+                    <button id="burger-menu" class="-mr-2 flex size-12 flex-col items-center justify-center lg:hidden">
+                        <span class="my-[3px] h-0.5 w-6 bg-black"></span><span
+                            class="my-[3px] h-0.5 w-6 bg-black"></span><span class="my-[3px] h-0.5 w-6 bg-black"></span>
+                    </button>
+                    <!-- Mobile Menu -->
+                    <div id="mobile-menu"
+                        class="lg:hidden hidden absolute top-0 left-0 w-full h-500px bg-white shadow-md flex justify-center items-center">
+                        <!-- Close Button -->
+                        <button id="close-menu" class="absolute top-4 right-4 text-2xl text-black">✖</button>
+
+                        <ul class="space-y-4 text-lg text-center mt-[10px] mb-[10px]">
+                            <li><a href="#services" class="text-black">Services</a></li>
+                            <li><a href="#about" class="text-black">About</a></li>
+                            <li><a href="#contact" class="text-black">Contact</a></li>
+                            <li><button
+                                    class="cursor-pointer focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 border border-border-primary bg-background-alternative text-text-alternative w-full px-4 py-1"
+                                    title="Book Now"
+                                    onclick="window.location.href='https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services'">
+                                    Book Now
+                                </button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overflow-hidden px-[5%] text-center lg:flex lg:items-center lg:justify-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
+                style="height:var(--height-closed, 0)">
+                <a href="#services"
+                    class="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2">Services</a><a
+                    href="#about"
+                    class="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2">About</a><a
+                    href="#contact"
+                    class="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2">Contact</a>
+            </div>
+            <div class="hidden justify-self-end lg:block">
+                <button
+                    class="cursor-pointer focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 border border-border-primary bg-background-alternative text-text-alternative px-6 py-2"
+                    title="Book Now"
+                    onclick="window.location.href='https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services'">
+                    Book Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="home" class=" flex items-center justify-center px-[5%] py-12 md:py-16 lg:py-20">
+        <div class="container relative">
+            <div
+                class="relative z-10 flex min-h-[32rem] flex-col items-center justify-center p-8 text-center md:min-h-[40rem] md:p-16">
+                <div class="w-full max-w-lg">
+                    <h1
+                        class="flex justify-center mb-5 text-6xl font-bold font-main text-text-alternative md:mb-6 md:text-9xl lg:text-10xl text-white">
+                        PREMIUM GROOMING FOR MODERN MEN
+                    </h1>
+                    <p class=" text-text-alternative md:text-md text-white">
+                        Experience the art of precision cuts and classic grooming at Flex Cuts
+                    </p>
+                </div>
+                <div class="mt-6 flex flex-wrap items-center justify-center gap-4 md:mt-8">
+                    <button
+                        class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 cursor-pointer border border-border-primary bg-background-alternative text-text-alternative px-6 py-3 text-white"
+                        title="BOOK YOUR APPOINTMENT"
+                        onclick="window.location.href='https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services'">
+                        BOOK YOUR APPOINTMENT
+                    </button>
+                </div>
+            </div>
+            <div class="absolute inset-0 z-0">
+                <video class="absolute inset-0 aspect-video size-full object-cover" autoplay="" loop="" muted="">
+                    <source src="/Assets/haircutbgvideo.webm" type="video/mp4" />
+                </video>
+                <div class="absolute inset-0 bg-black/50"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class=" flex items-center justify-center px-[5%] py-16 md:py-24 lg:py-28">
+        <div class="container">
+            <div class="mb-12 md:mb-18 lg:mb-20">
+                <div class="mx-auto max-w-lg text-center">
+                    <p class="font-semibold">Precision. Style. Confidence.</p>
+                    <h1 class="mt-3 text-5xl font-main font-bold md:mt-4 md:text-7xl lg:text-8xl">
+                        OUR SERVICES
+                    </h1>
+                    <p class="mt-5 text-base md:mt-6 md:text-md">
+                        Fresh fades, clean cuts, and styles that turn heads. Walk in for a
+                        trim, walk out looking your best.
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 justify-items-start gap-x-5 gap-y-12 md:gap-x-8 md:gap-y-16 lg:grid-cols-4">
+                <a href="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services/P4IJD2QJMSOI46KZKLXSRNFY"
+                    class="text-center font-semibold md:text-md transition-transform duration-300 ease-in-out hover:scale-[1.03]">
+                    <div class="mb-3 aspect-[5/6] md:mb-4">
+                        <img src="./Assets/1.png" alt="Women's haircut"
+                            class="size-full object-cover grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
+                    </div>
+                    <div class="mb-2">
+                        <h3>Women&#x27;s Haircut</h3>
+                    </div>
+                    <div class="text-md md:text-lg">Varies</div>
+                </a><a
+                    href="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services/EF4LFEXALKUXIZGZDFPJQDPR"
+                    class="text-center font-semibold md:text-md transition-transform duration-300 ease-in-out hover:scale-[1.03]">
+                    <div class="mb-3 aspect-[5/6] md:mb-4">
+                        <img src="./Assets/2.png" alt="Men's haircut"
+                            class="size-full object-cover grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
+                    </div>
+                    <div class="mb-2">
+                        <h3>Men&#x27;s Haircut</h3>
+                    </div>
+                    <div class="text-md md:text-lg">$35</div>
+                </a><a
+                    href="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services/QOLGLB46WEICE2AU75675JPQ"
+                    class="text-center font-semibold md:text-md transition-transform duration-300 ease-in-out hover:scale-[1.03]">
+                    <div class="mb-3 aspect-[5/6] md:mb-4">
+                        <img src="./Assets/3.png" alt="kids haircut"
+                            class="size-full object-cover grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
+                    </div>
+                    <div class="mb-2">
+                        <h3>Kids Haircut (3-12 years)</h3>
+                    </div>
+                    <div class="text-md md:text-lg">$20</div>
+                </a><a
+                    href="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services/C4AS7LKM6AUXVXWKIJCSPZZB"
+                    class="text-center font-semibold md:text-md transition-transform duration-300 ease-in-out hover:scale-[1.03]">
+                    <div class="mb-3 aspect-[5/6] md:mb-4">
+                        <img src="./Assets/4.png" alt="Teens haircut"
+                            class="size-full object-cover grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
+                    </div>
+                    <div class="mb-2">
+                        <h3>Teens Haircut (13-17 years)</h3>
+                    </div>
+                    <div class="text-md md:text-lg">$25</div>
+                </a><a
+                    href="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services/SDNWYTAGLC7OP42YS565WHNG"
+                    class="text-center font-semibold md:text-md transition-transform duration-300 ease-in-out hover:scale-[1.03]">
+                    <div class="mb-3 aspect-[5/6] md:mb-4">
+                        <img src="./Assets/5.png" alt="senior's haircut"
+                            class="size-full object-cover grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
+                    </div>
+                    <div class="mb-2">
+                        <h3>Senior&#x27;s Haircut</h3>
+                    </div>
+                    <div class="text-md md:text-lg">$25</div>
+                </a><a
+                    href="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services/WCI5E4UDO3E6P45OPKKROVMQ"
+                    class="text-center font-semibold md:text-md transition-transform duration-300 ease-in-out hover:scale-[1.03]">
+                    <div class="mb-3 aspect-[5/6] md:mb-4">
+                        <img src="./Assets/6.png" alt="beard trim"
+                            class="size-full object-cover grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
+                    </div>
+                    <div class="mb-2">
+                        <h3>Beard trim</h3>
+                    </div>
+                    <div class="text-md md:text-lg">$20</div>
+                </a><a
+                    href="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services/IXL2HP7ESI4ANAEHRDIPIKRP"
+                    class="text-center font-semibold md:text-md transition-transform duration-300 ease-in-out hover:scale-[1.03]">
+                    <div class="mb-3 aspect-[5/6] md:mb-4">
+                        <img src="./Assets/7.png" alt="hair shampoo and conditioner"
+                            class="size-full object-cover grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
+                    </div>
+                    <div class="mb-2">
+                        <h3>Hair Shompoo &amp; Conditioner</h3>
+                    </div>
+                    <div class="text-md md:text-lg">$15</div>
+                </a><a
+                    href="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services/MBEJ3MMUM3VHFNHB6ZN4CLNF"
+                    class="text-center font-semibold md:text-md transition-transform duration-300 ease-in-out hover:scale-[1.03]">
+                    <div class="mb-3 aspect-[5/6] md:mb-4">
+                        <img src="./Assets/8.png" alt="buzz cut"
+                            class="size-full object-cover grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
+                    </div>
+                    <div class="mb-2">
+                        <h3>Buzz Cut</h3>
+                    </div>
+                    <div class="text-md md:text-lg">$20</div>
+                </a><a
+                    href="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services/6DOCQ3P55FUYBAHYK7CBKBCC"
+                    class="text-center font-semibold md:text-md transition-transform duration-300 ease-in-out hover:scale-[1.03]">
+                    <div class="mb-3 aspect-[5/6] md:mb-4">
+                        <img src="./Assets/9.png" alt="Line Ups"
+                            class="size-full object-cover grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
+                    </div>
+                    <div class="mb-2">
+                        <h3>Men&#x27;s Line-Up (Edge-Up)</h3>
+                    </div>
+                    <div class="text-md md:text-lg">$20</div>
+                </a>
+                <a
+                    href="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services/6DOCQ3P55FUYBAHYK7CBKBCC"
+                    class="text-center font-semibold md:text-md transition-transform duration-300 ease-in-out hover:scale-[1.03]">
+                    <div class="mb-3 aspect-[5/6] md:mb-4">
+                        <img src="./Assets/11.png" alt="Line Ups"
+                            class="size-full object-cover grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
+                    </div>
+                    <div class="mb-2">
+                        <h3>Men&#x27;s Taper</h3>
+                    </div>
+                    <div class="text-md md:text-lg">$20</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class=" flex items-center justify-center px-[5%] py-16 md:py-24 lg:py-28">
+        <div class="container">
+            <div class="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
+                <div>
+                    <h1 class="mb-5 text-5xl font-main font-bold md:mb-6 md:text-7xl lg:text-8xl">
+                        About Flex Cuts
+                    </h1>
+                    <p class="mb-5 text-base md:mb-6 md:text-md bg-white">
+                        Founded in 2015, Flex Cuts has established itself as the premier
+                        destination for men seeking exceptional grooming services in a
+                        relaxed, contemporary environment. Our team of skilled barbers
+                        combines traditional techniques with modern styles to deliver
+                        personalized grooming experiences that exceed expectations. At Flex
+                        Cuts, we believe that grooming is more than just a service—it&#x27;s
+                        an experience. From the moment you walk in, you&#x27;ll enjoy our
+                        carefully curated atmosphere, premium products, and unparalleled
+                        attention to detail.
+                    </p>
+                    <ul class="grid grid-cols-1 gap-4 py-2">
+                        <li class="flex self-start">
+                            <span>> Mon-Sat: 10AM-7PM</span>
+                        </li>
+                        <li class="flex self-start">
+                            <span>> 660 Osborne St, Winnipeg, MB R3L 2B6</span>
+                        </li>
+                        <li class="flex self-start">
+                            <span>> (204) 306-6044</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="./Assets/FlexCuts Barbershop - Google Maps.png" class="w-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" alt="Barbershop Photo"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex items-center justify-center overflow-hidden px-[5%] py-16 md:py-24 lg:py-28">
+        <div class="container">
+            <div class="mb-12 w-full max-w-lg md:mb-18 lg:mb-20">
+                <h2 class="mb-5 text-5xl font-main font-bold md:mb-6 md:text-7xl lg:text-8xl">
+                    What Our Clients Say
+                </h2>
+                <p class="md:text-md">
+                    Real experiences, real results. See what our clients have to say about
+                    their Flex Cut experience.
+                </p>
+            </div>
+            <div class="relative ml-0 pb-20 md:pb-24">
+                <div class="relative overflow-hidden" role="region" aria-roledescription="carousel">
+                    <div class="relative pb-20 md:pb-24">
+                        <div>
+                            <div class="flex ml-0">
+                                <div role="group" aria-roledescription="slide"
+                                    class="min-w-0 shrink-0 grow-0 basis-full pl-0 lg:basis-1/2 lg:pr-16">
+                                    <div class="mx-auto flex h-full max-w-lg flex-col justify-center">
+                                        <div class="mb-6 flex md:mb-8">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <blockquote class="text-md font-bold leading-[1.4] md:text-xl bg-white">
+                                            &quot;I had an incredible experience with Mr. Felix at FlexCuts Barbershop
+                                            today! From the moment I walked in, the atmosphere was welcoming and
+                                            professional. Mr. Felix took the time to understand exactly what I wanted
+                                            and delivered a flawless haircut that exceeded my expectations. His
+                                            attention to detail and expertise are unmatched—he really knows his craft. I
+                                            highly recommend Mr. Felix to anyone looking for a top-tier barber in
+                                            Winnipeg. I’ll definitely be coming back!&quot;
+                                        </blockquote>
+                                        <div
+                                            class="mt-6 flex w-full flex-col gap-5 md:mt-8 md:w-auto md:flex-row md:items-center md:text-left">
+                                            <div class="mb-4 md:mb-0">
+                                                <p class="font-semibold text-lg">Mahbub Zamam</p>
+                                            </div>
+                                            <div class="hidden w-px self-stretch bg-background-alternative md:block">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="group" aria-roledescription="slide"
+                                    class="min-w-0 shrink-0 grow-0 basis-full pl-0 lg:basis-1/2 lg:pr-16">
+                                    <div class="mx-auto flex h-full max-w-lg flex-col justify-center">
+                                        <div class="mb-6 flex md:mb-8">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <blockquote class="text-md font-bold leading-[1.4] md:text-xl bg-white">
+                                            &quot;I recently visited FlexCuts Barbershop and had the pleasure of being
+                                            serviced by Felix. His professionalism and skill set are truly impressive.
+                                            Felix has a keen eye for detail and demonstrated exceptional precision in
+                                            his haircut. He is well-versed in various styles and techniques, ensuring
+                                            that each client leaves satisfied with their desired look.
+                                            I recommend FlexCuts Barbershop and especially barber Felix.&quot;
+                                        </blockquote>
+                                        <div
+                                            class="mt-6 flex w-full flex-col gap-5 md:mt-8 md:w-auto md:flex-row md:items-center md:text-left">
+                                            <div class="mb-4 md:mb-0">
+                                                <p class="font-semibold text-lg">Vitalii Baidaliuk</p>
+                                            </div>
+                                            <div class="hidden w-px self-stretch bg-background-alternative md:block">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="group" aria-roledescription="slide"
+                                    class="min-w-0 shrink-0 grow-0 basis-full pl-0 lg:basis-1/2 lg:pr-16">
+                                    <div class="mx-auto flex h-full max-w-lg flex-col justify-center">
+                                        <div class="mb-6 flex md:mb-8">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <blockquote class="text-md font-bold leading-[1.4] md:text-xl">
+                                            &quot;Great place to get a cut. Barber was a real professional and gave me a
+                                            better haircut then I've had in a long time. I will definitely be coming
+                                            back. 10/10 would recommend.&quot;
+                                        </blockquote>
+                                        <div
+                                            class="mt-6 flex w-full flex-col gap-5 md:mt-8 md:w-auto md:flex-row md:items-center md:text-left">
+                                            <div class="mb-4 md:mb-0">
+                                                <p class="font-semibold">Michael</p>
+                                            </div>
+                                            <div class="hidden w-px self-stretch bg-background-alternative md:block">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div role="group" aria-roledescription="slide"
+                                    class="min-w-0 shrink-0 grow-0 basis-full pl-0 lg:basis-1/2 lg:pr-16">
+                                    <div class="mx-auto flex h-full max-w-lg flex-col justify-center">
+                                        <div class="mb-6 flex md:mb-8">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <blockquote class="text-md font-bold leading-[1.4] md:text-xl">
+                                            &quot;Mr. Flex is a phenomenal barber! Great energy and knows how to do his
+                                            job. I highly recommend you going here, You'll be satisfied and will be sure
+                                            to come back. Keep being authentic Mr. Flex. Blessings.&quot;
+                                        </blockquote>
+                                        <div
+                                            class="mt-6 flex w-full flex-col gap-5 md:mt-8 md:w-auto md:flex-row md:items-center md:text-left">
+                                            <div class="mb-4 md:mb-0">
+                                                <p class="font-semibold">Ryan Kelly</p>
+                                            </div>
+                                            <div class="hidden w-px self-stretch bg-background-alternative md:block">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 flex w-full items-center justify-between">
+                            <div class="mt-5 flex w-full items-start justify-start">
+                                <button
+                                    class="mx-[3px] inline-block size-2 rounded-full bg-neutral-light"></button><button
+                                    class="mx-[3px] inline-block size-2 rounded-full bg-neutral-light"></button><button
+                                    class="mx-[3px] inline-block size-2 rounded-full bg-neutral-light"></button><button
+                                    class="mx-[3px] inline-block size-2 rounded-full bg-neutral-light"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="flex items-center justify-center px-[5%] py-16 md:py-24 lg:py-28">
+        <div class="container">
+            <div class="rb-12 mb-12 max-w-lg md:mb-18 lg:mb-20">
+                <h2 class="rb-5 mb-5 text-5xl font-main font-bold md:mb-6 md:text-7xl lg:text-8xl">
+                    Contact us
+                </h2>
+                <p class="md:text-md">
+                    Schedule your next grooming session with our expert barbers. Walk-ins
+                    are welcome, but appointments are recommended to ensure availability.
+                </p>
+            </div>
+            <div
+                class="grid auto-cols-fr grid-cols-1 gap-x-12 gap-y-10 md:grid-cols-[0.5fr_1fr] md:gap-x-20 md:gap-y-16">
+                <div class="grid auto-cols-fr grid-cols-1 gap-x-4 gap-y-10">
+                    <div>
+                        <h3 class="mb-2 text-md font-bold leading-[1.4] md:text-xl">
+                            Location
+                        </h3>
+                        <p class="mb-2">
+                            660 Osborne St, Winnipeg, MB R3L 2B6</p>
+                        <a class="underline" href="#">flexcutsbarbershop@outlook.com</a>
+                    </div>
+                    <div>
+                        <h3 class="mb-2 text-md font-bold leading-[1.4] md:text-xl">Hours</h3>
+                        <p class="mb-2">Mon-Sat: 10AM-7PM.</p>
+                        <a class="underline" href="#">+1 (204) 306-6044</a>
+                    </div>
+                </div>
+                <a href="#" class="justify-self-end md:w-[21.6px] lg:w-auto">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.901365132948!2d-97.13491208716628!3d49.86309742936047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x268462e1faf63137%3A0xe720f9dadf4d966!2sFlexCuts%20Barbershop!5e0!3m2!1sen!2sca!4v1741261111308!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class=" flex items-center justify-center px-[5%] py-16 md:py-24 lg:py-28">
+        <div class="container max-w-lg text-center">
+            <h2 class="flex justify-center rb-5 mb-5 text-5xl font-main font-bold md:mb-6 md:text-7xl lg:text-8xl b-2-green">
+                Book Your Appointment
+            </h2>
+            <p class="md:text-md">
+                We&#x27;ve integrated with Squarespace for a seamless booking experience.
+            </p>
+            <div class="mt-6 flex items-center justify-center gap-4 md:mt-8">
+                <button
+                    class=":ring-border-primary cursor-pointer inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary bg-background-alternative text-text-alternative px-6 py-3"
+                    title="Book on Sqaurespace"
+                    onclick="window.location.href='https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services'">
+                    Book on Sqaurespace
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class=" flex items-center justify-center px-[5%] py-12 md:py-18 lg:py-20">
+        <div class="container">
+            <div class="flex flex-col items-center pb-12 md:pb-18 lg:pb-20">
+                <a href="#" class="mb-8"><img src="./Assets/mainlogo.png" alt="Logo image"
+                        class="inline-block h-[80px]" /></a>
+                <ul
+                    class="grid grid-flow-row grid-cols-1 items-start justify-center justify-items-center gap-6 md:grid-flow-col md:grid-cols-[max-content] md:justify-center md:justify-items-start">
+                    <li class="font-semibold text-lg"><a href="#services">Services</a></li>
+                    <li class="font-semibold text-lg"><a href="#about">About</a></li>
+                    <li class="font-semibold text-lg"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="h-px w-full bg-black"></div>
+            <div
+                class="flex flex-col-reverse items-center justify-between pb-4 pt-6 text-center text-sm md:flex-row md:pb-0 md:pt-8">
+                <p class="mt-8 md:mt-0">© 2024 Flexcuts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tailwind CSS classes to handle the toggling of the menu -->
+    <script>
+        const burgerMenu = document.getElementById('burger-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenu = document.getElementById('close-menu');
+
+        // Open the mobile menu when the burger menu is clicked
+        burgerMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close the mobile menu when the close button is clicked
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    </script>
+
+    <style type="text/tailwindcss">
+        @theme {
+          --color-clifford: #da373d;
+          
+  --font-main: "Inria Serif", serif;
+        }
+      </style>
+</body>
+
+</html>
