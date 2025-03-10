@@ -4,34 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="no-referrer-when-downgrade">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
 
-    <title>Barber Shop Winnipeg, MB | FlexCuts</title>
-    <link rel="icon" href="/Assets/faviconfc.svg" type="image/svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="/Assets/faviconfc.svg">
-
-    <meta name="description" content="Flex Cuts Barbershop – Winnipeg’s go-to spot for precision haircuts and premium grooming. Since 2015, we've delivered expert fades, beard trims, and modern styles. Book now or walk in at 660 Osborne St. Call (204) 306-6044. Open Mon-Sat: 10AM-7PM.">
-
-    <meta property="og:title" content="Flex Cuts Barbershop – Winnipeg’s Top Grooming Spot">
-    <meta property="og:description" content="Looking sharp starts here! Get expert haircuts and beard trims at Flex Cuts Barbershop. Visit us at 660 Osborne St, Winnipeg. Call (204) 306-6044.">
-    <meta property="og:image" content="https://flexcutsbarbershop.com/Assets/mainlogo.png">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Flex Cuts Barbershop in Winnipeg specializes in expert fades, precision haircuts, and premium beard trims. Walk-ins welcome at 660 Osborne St or book now. Call (204) 306-6044. Open Mon-Sat: 10AM-7PM.">
+    <meta name="keywords" content="barber shop Winnipeg, haircuts, fades, beard trims, men's grooming, Winnipeg barbershop">
+    <link rel="canonical" href="https://flexcutsbarbershop.com">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:title" content="Flex Cuts Barbershop – Winnipeg’s Best Grooming Experience">
+    <meta property="og:description" content="Get sharp with expert haircuts & beard trims at Flex Cuts Barbershop. Walk-ins welcome at 660 Osborne St, Winnipeg. Call (204) 306-6044.">
+    <meta property="og:image" content="/Assets/flexcuts_og_image.png">
     <meta property="og:url" content="https://flexcutsbarbershop.com">
     <meta property="og:type" content="website">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Flex Cuts Barbershop – Winnipeg’s Best Grooming Experience">
+    <meta name="twitter:description" content="Visit Flex Cuts Barbershop for top-tier haircuts & beard trims in Winnipeg. Call (204) 306-6044 or visit 660 Osborne St.">
+    <meta name="twitter:image" content="https://flexcutsbarbershop.com/Assets/mainlogo.png">
+    <meta name="twitter:site" content="@yourbarbershop">
+    
+    <!-- Favicon & Icons -->
+    <link rel="icon" href="/Assets/faviconfc.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Assets/faviconfc.svg">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Preloads -->
+    <link rel="preload" as="image" href="/Assets/flexcuts_og_image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/inriaserif/v1/...your-font-file.woff2" type="font/woff2" crossorigin="anonymous">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
 
-
+     
+    <title>Flex Cuts Barbershop | Expert Haircuts & Beard Trims in Winnipeg</title>
+    
+    <!-- Structured Data (Schema Markup) -->
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "Barbershop",
           "name": "Flex Cuts Barbershop",
           "description": "Flex Cuts Barbershop is Winnipeg’s go-to destination for modern men's grooming, haircuts, and beard trims.",
-          "image": "https://yourwebsite.com/path-to-image.jpg",
-          "url": "https://yourwebsite.com",
+          "image": "https://flexcutsbarbershop.com/Assets/mainlogo.png",
+          "url": "https://flexcutsbarbershop.com",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "660 Osborne St",
@@ -46,21 +69,19 @@
             "longitude": "-97.1400"
           },
           "telephone": "+1-204-306-6044",
-          "openingHours": [
-            "Mo-Sa 10:00-19:00"
-          ],
+          "openingHours": ["Mo-Sa 10:00-19:00"],
           "priceRange": "$$",
           "sameAs": [
             "https://www.instagram.com/yourbarbershop",
             "https://www.facebook.com/yourbarbershop"
           ]
         }
-        </script>
+    </script>
         
 </head>
 
-<body class>
-    <section class="bg-[url('./Assets/bg2img.png')] bg-center sticky top-0 z-[999] flex w-full items-center lg:min-h-18 lg:px-[5%] bg-white border-b border-black">
+<body >
+    <section class="bg-[url('./Assets/bg2img.png')] bg-center sticky max-h-[100px] top-0 z-[999] flex w-full items-center lg:min-h-18 lg:px-[5%] bg-white border-b border-black">
         <div
             class="mx-auto size-full lg:grid lg:grid-cols-[0.375fr_1fr_0.375fr] lg:items-center lg:justify-between lg:gap-4">
             <div class="flex mt-5 mb-5 min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
@@ -81,7 +102,7 @@
                             <li><a href="#about" class="text-black">About</a></li>
                             <li><a href="#contact" class="text-black">Contact</a></li>
                             <li><button
-                                    class="cursor-pointer focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 border border-border-primary bg-background-alternative text-text-alternative w-full px-4 py-1"
+                                    class="hover:bg-[url('./Assets/barbercolor.png')] border-1 bg-center text-black font-bold cursor-pointer focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 border border-border-primary bg-background-alternative text-text-alternative w-full px-4 py-1"
                                     title="Book Now"
                                     onclick="window.location.href='https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services'">
                                     Book Now
@@ -102,7 +123,7 @@
             </div>
             <div class="hidden justify-self-end lg:block">
                 <button
-                    class="cursor-pointer focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 border border-border-primary bg-background-alternative text-text-alternative px-6 py-2"
+                    class="cursor-pointer border-1 focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 border border-border-primary bg-background-alternative hover:bg-[url('./Assets/barbercolor.png')] bg-center text-black font-bold text-text-alternative px-6 py-2"
                     title="Book Now"
                     onclick="window.location.href='https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services'">
                     Book Now
@@ -126,7 +147,7 @@
                 </div>
                 <div class="mt-6 flex flex-wrap items-center justify-center gap-4 md:mt-8">
                     <button
-                        class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 cursor-pointer border border-border-primary bg-background-alternative text-text-alternative px-6 py-3 text-white"
+                        class="bg-[url('./Assets/barbercolor.png')] bg-center text-black font-bold focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 cursor-pointer border border-border-primary bg-background-alternative text-text-alternative px-6 py-3 text-white"
                         title="BOOK YOUR APPOINTMENT"
                         onclick="window.location.href='https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services'">
                         BOOK YOUR APPOINTMENT
@@ -257,7 +278,7 @@
                     <div class="text-md md:text-lg">$20</div>
                 </a>
                 <a
-                    href="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services/6DOCQ3P55FUYBAHYK7CBKBCC"
+                    href="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services/HKGV7GHHCBDTLIVMJVLV2MBL"
                     class="text-center font-semibold md:text-md transition-transform duration-300 ease-in-out hover:scale-[1.03]">
                     <div class="mb-3 aspect-[5/6] md:mb-4">
                         <img src="./Assets/11.png" alt="Line Ups"
@@ -266,7 +287,7 @@
                     <div class="mb-2">
                         <h3>Men&#x27;s Taper</h3>
                     </div>
-                    <div class="text-md md:text-lg">$20</div>
+                    <div class="text-md md:text-lg">$25</div>
                 </a>
             </div>
         </div>
@@ -595,14 +616,14 @@
                 Book Your Appointment
             </h2>
             <p class="md:text-md">
-                We&#x27;ve integrated with Squarespace for a seamless booking experience.
+                We&#x27;ve integrated with Square for a seamless booking experience.
             </p>
             <div class="mt-6 flex items-center justify-center gap-4 md:mt-8">
                 <button
-                    class=":ring-border-primary cursor-pointer inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary bg-background-alternative text-text-alternative px-6 py-3"
+                    class="hover:bg-[url('./Assets/barbercolor.png')] bg-center text-black font-bold :ring-border-primary cursor-pointer inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary bg-background-alternative text-text-alternative px-6 py-3"
                     title="Book on Sqaurespace"
                     onclick="window.location.href='https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services'">
-                    Book on Sqaurespace
+                    Book on Sqaure
                 </button>
             </div>
         </div>
