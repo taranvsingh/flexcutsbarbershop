@@ -88,10 +88,10 @@
 
 <body>
     <section id="site-navbar"
-        class="sticky top-0 z-[999] flex w-full items-center md:min-h-[108px] md:py-3 lg:px-[5%] border-b border-black bg-white">
+        class="sticky top-0 z-[999] flex w-full items-center justify-center px-[5%] md:min-h-[108px] md:py-3 bg-white">
         <div
-            class="mx-auto size-full lg:grid lg:grid-cols-[0.375fr_1fr_0.375fr] lg:items-center lg:justify-between lg:gap-4">
-            <div class="flex mt-5 mb-5 min-h-16 items-center justify-between px-[5%] md:mt-0 md:mb-0 md:min-h-0 lg:min-h-full lg:px-0">
+            class="container mx-auto w-full border-b border-black pb-4 md:pb-5 lg:grid lg:grid-cols-[0.375fr_1fr_0.375fr] lg:items-center lg:justify-between lg:gap-4">
+            <div class="flex mt-5 min-h-16 items-center justify-between px-[5%] md:mt-0 md:min-h-0 lg:min-h-full lg:px-0">
                 <a href="#home" class="flex items-center"><img src="/Assets/mainlogo.png" alt="Flex Cuts Barbershop logo"
                         class="h-16 w-auto object-contain md:h-20" /></a>
                 <div class="flex items-center gap-4 lg:hidden">
@@ -106,13 +106,13 @@
                         <button id="close-menu" class="absolute top-4 right-4 text-2xl text-black">&#x2716;</button>
 
                         <ul class="space-y-4 text-lg text-center mt-[10px] mb-[10px]">
-                            <li><a href="#services" class="text-black">Services</a></li>
-                            <li><a href="#about" class="text-black">About</a></li>
-                            <li><a href="#contact" class="text-black">Contact</a></li>
+                            <li><a href="#services" class="font-semibold text-black transition-colors hover:text-neutral-600">Services</a></li>
+                            <li><a href="#about" class="font-semibold text-black transition-colors hover:text-neutral-600">About</a></li>
+                            <li><a href="#contact" class="font-semibold text-black transition-colors hover:text-neutral-600">Contact</a></li>
                             <li><button
                                     data-booking-trigger
                                     data-booking-url="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services"
-                                    class="hover:bg-[url('./Assets/barbercolor.png')] border-1 bg-center text-black font-bold cursor-pointer focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 border border-border-primary bg-background-alternative text-text-alternative w-full px-4 py-1"
+                                    class="hover:bg-[url('./Assets/barbercolor.png')] bg-center text-black font-bold cursor-pointer focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 border-2 border-border-primary bg-background-alternative text-text-alternative w-full px-4 py-1"
                                     title="Book Now">
                                     Book Now
                                 </button></li>
@@ -124,17 +124,17 @@
             <div class="overflow-hidden px-[5%] text-center lg:flex lg:items-center lg:justify-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
                 style="height:var(--height-closed, 0)">
                 <a href="#services"
-                    class="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2">Services</a><a
+                    class="block py-3 text-md font-semibold text-black transition-colors hover:text-neutral-600 first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2">Services</a><a
                     href="#about"
-                    class="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2">About</a><a
+                    class="block py-3 text-md font-semibold text-black transition-colors hover:text-neutral-600 first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2">About</a><a
                     href="#contact"
-                    class="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2">Contact</a>
+                    class="block py-3 text-md font-semibold text-black transition-colors hover:text-neutral-600 first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2">Contact</a>
             </div>
             <div class="hidden justify-self-end lg:block">
                 <button
                     data-booking-trigger
                     data-booking-url="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services"
-                    class="cursor-pointer border-1 focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 border border-border-primary bg-background-alternative hover:bg-[url('./Assets/barbercolor.png')] bg-center text-black font-bold text-text-alternative px-6 py-2"
+                    class="cursor-pointer focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 border-2 border-border-primary bg-background-alternative hover:bg-[url('./Assets/barbercolor.png')] bg-center text-black font-bold text-text-alternative px-6 py-2"
                     title="Book Now">
                     Book Now
                 </button>
@@ -338,7 +338,7 @@
                         <div id="reviews-carousel-track" class="flex ml-0">
                                 <div role="group" aria-roledescription="slide"
                                     class="reviews-carousel-slide min-w-0 shrink-0 grow-0 basis-full pl-0 lg:basis-1/2 lg:pr-16">
-                                    <div class="mx-auto flex h-full max-w-lg flex-col justify-center">
+                                    <div class="flex h-full w-full max-w-lg flex-col justify-center">
                                         <div class="mb-6 flex md:mb-8">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                 viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
@@ -372,7 +372,7 @@
                                                 </path>
                                             </svg>
                                         </div>
-                                        <blockquote class="text-md font-bold leading-[1.4] md:text-xl bg-white">
+                                        <blockquote class="m-0 p-0 text-md font-bold leading-[1.4] md:text-xl bg-white">
                                             &quot;Fantastic job from Felix at a great price, very happy with the outcome. He listened to what I wanted, didn't rush it, and nailed the look better than I expected, great attention to detail! If you're in Winnipeg and need a proper barber, go see Felix.&quot;
                                         </blockquote>
                                         <div
@@ -387,7 +387,7 @@
                                 </div>
                                 <div role="group" aria-roledescription="slide"
                                     class="reviews-carousel-slide min-w-0 shrink-0 grow-0 basis-full pl-0 lg:basis-1/2 lg:pr-16">
-                                    <div class="mx-auto flex h-full max-w-lg flex-col justify-center">
+                                    <div class="flex h-full w-full max-w-lg flex-col justify-center">
                                         <div class="mb-6 flex md:mb-8">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                 viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
@@ -421,7 +421,7 @@
                                                 </path>
                                             </svg>
                                         </div>
-                                        <blockquote class="text-md font-bold leading-[1.4] md:text-xl bg-white">
+                                        <blockquote class="m-0 p-0 text-md font-bold leading-[1.4] md:text-xl bg-white">
                                             &quot;I was looking for a new barber and a friend referred me to Felix. My only regret was not going to see him sooner. Excellent hair cut as well goatee, moustache and eyebrow trim.
 He is very meticulous and he made sure it was perfect before I left. He listened to what I wanted and worked his magic. My wife was totally impressed when she saw me afterwards (the look on her face said it all) and that sealed the deal for me. I now have a new barber.
 Great barber, great price and extremely convenient location.
@@ -439,7 +439,7 @@ Thanks Felix!&quot;
                                 </div>
                                 <div role="group" aria-roledescription="slide"
                                     class="reviews-carousel-slide min-w-0 shrink-0 grow-0 basis-full pl-0 lg:basis-1/2 lg:pr-16">
-                                    <div class="mx-auto flex h-full max-w-lg flex-col justify-center">
+                                    <div class="flex h-full w-full max-w-lg flex-col justify-center">
                                         <div class="mb-6 flex md:mb-8">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                 viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
@@ -473,7 +473,7 @@ Thanks Felix!&quot;
                                                 </path>
                                             </svg>
                                         </div>
-                                        <blockquote class="text-md font-bold leading-[1.4] md:text-xl">
+                                        <blockquote class="m-0 p-0 text-md font-bold leading-[1.4] md:text-xl">
                                             &quot;Great place to get a cut. Barber was a real professional and gave me a
                                             better haircut then I've had in a long time. I will definitely be coming
                                             back. 10/10 would recommend.&quot;
@@ -491,7 +491,7 @@ Thanks Felix!&quot;
 
                                 <div role="group" aria-roledescription="slide"
                                     class="reviews-carousel-slide min-w-0 shrink-0 grow-0 basis-full pl-0 lg:basis-1/2 lg:pr-16">
-                                    <div class="mx-auto flex h-full max-w-lg flex-col justify-center">
+                                    <div class="flex h-full w-full max-w-lg flex-col justify-center">
                                         <div class="mb-6 flex md:mb-8">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                 viewBox="0 0 24 24" class="size-6" height="1em" width="1em"
@@ -525,7 +525,7 @@ Thanks Felix!&quot;
                                                 </path>
                                             </svg>
                                         </div>
-                                        <blockquote class="text-md font-bold leading-[1.4] md:text-xl">
+                                        <blockquote class="m-0 p-0 text-md font-bold leading-[1.4] md:text-xl">
                                             &quot;Mr. Flex is a phenomenal barber! Great energy and knows how to do his
                                             job. I highly recommend you going here, You'll be satisfied and will be sure
                                             to come back. Keep being authentic Mr. Flex. Blessings.&quot;
@@ -558,9 +558,21 @@ Thanks Felix!&quot;
                     are welcome, but appointments are recommended to ensure availability.
                 </p>
             </div>
-            <div
-                class="grid auto-cols-fr grid-cols-1 gap-x-12 gap-y-10 md:grid-cols-[0.5fr_1fr] md:gap-x-20 md:gap-y-16">
-                <div class="grid auto-cols-fr grid-cols-1 gap-x-4 gap-y-10">
+            <div class="flex flex-col gap-10 md:gap-12">
+                <div class="w-full min-w-0">
+                    <div class="aspect-[16/9] w-full overflow-hidden border border-black md:aspect-[21/9]">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.901365132948!2d-97.13491208716628!3d49.86309742936047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x268462e1faf63137%3A0xe720f9dadf4d966!2sFlexCuts%20Barbershop!5e0!3m2!1sen!2sca!4v1741261111308!5m2!1sen!2sca"
+                            class="h-full w-full" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Flex Cuts Barbershop location map"></iframe>
+                    </div>
+                    <a class="mt-4 inline-block font-semibold underline"
+                        href="https://www.google.com/maps/dir/?api=1&destination=FlexCuts+Barbershop,+660+Osborne+St,+Winnipeg,+MB+R3L+2B6"
+                        target="_blank" rel="noopener noreferrer">
+                        Get directions
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-x-8 gap-y-6 md:gap-x-16 lg:gap-x-24">
                     <div>
                         <h3 class="mb-2 text-md font-bold leading-[1.4] md:text-xl">
                             Location
@@ -574,12 +586,6 @@ Thanks Felix!&quot;
                         <p class="mb-2">Mon-Sat: 10AM-7PM.</p>
                         <a class="underline" href="tel:+12043066044">+1 (204) 306-6044</a>
                     </div>
-                </div>
-                <div class="justify-self-end md:w-[21.6px] lg:w-auto">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.901365132948!2d-97.13491208716628!3d49.86309742936047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x268462e1faf63137%3A0xe720f9dadf4d966!2sFlexCuts%20Barbershop!5e0!3m2!1sen!2sca!4v1741261111308!5m2!1sen!2sca"
-                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" title="Flex Cuts Barbershop location map"></iframe>
                 </div>
             </div>
         </div>
