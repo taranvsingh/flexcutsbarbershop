@@ -1,0 +1,23 @@
+#reviews-carousel-viewport {
+    overflow: hidden;
+}
+
+#reviews-carousel-track {
+    transition: transform 0.35s ease;
+}
+
+.reviews-carousel-slide {
+    flex: 0 0 100%;
+}
+
+@media (min-width: 1024px) {
+    .reviews-carousel-slide {
+        flex: 0 0 50%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #reviews-carousel-track {
+        transition: none;
+    }
+}
