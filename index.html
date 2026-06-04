@@ -46,6 +46,9 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Assets/barber-modal.css">
+    <link rel="stylesheet" href="/Assets/reviews-carousel.css">
+    <link rel="stylesheet" href="/Assets/cursor.css">
 
     <title>Flex Cuts Barbershop | Expert Haircuts & Beard Trims in Winnipeg</title>
 
@@ -84,13 +87,13 @@
 </head>
 
 <body>
-    <section
-        class="md:bg-[url('./Assets/bg2img.png')] bg-center sticky max-h-[100px] top-0 z-[999] flex w-full items-center lg:min-h-18 lg:px-[5%] bg-white border-b border-black">
+    <section id="site-navbar"
+        class="sticky top-0 z-[999] flex w-full items-center md:min-h-[108px] md:py-3 lg:px-[5%] border-b border-black bg-white">
         <div
             class="mx-auto size-full lg:grid lg:grid-cols-[0.375fr_1fr_0.375fr] lg:items-center lg:justify-between lg:gap-4">
-            <div class="flex mt-5 mb-5 min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
-                <a href="#home"><img src="/Assets/mainlogo.png" alt="Flex Cuts Barbershop logo"
-                        class="h-20 w-auto object-contain" /></a>
+            <div class="flex mt-5 mb-5 min-h-16 items-center justify-between px-[5%] md:mt-0 md:mb-0 md:min-h-0 lg:min-h-full lg:px-0">
+                <a href="#home" class="flex items-center"><img src="/Assets/mainlogo.png" alt="Flex Cuts Barbershop logo"
+                        class="h-16 w-auto object-contain md:h-20" /></a>
                 <div class="flex items-center gap-4 lg:hidden">
                     <button id="burger-menu" class="-mr-2 flex size-12 flex-col items-center justify-center lg:hidden">
                         <span class="my-[3px] h-0.5 w-6 bg-black"></span><span
@@ -107,9 +110,10 @@
                             <li><a href="#about" class="text-black">About</a></li>
                             <li><a href="#contact" class="text-black">Contact</a></li>
                             <li><button
+                                    data-booking-trigger
+                                    data-booking-url="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services"
                                     class="hover:bg-[url('./Assets/barbercolor.png')] border-1 bg-center text-black font-bold cursor-pointer focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 border border-border-primary bg-background-alternative text-text-alternative w-full px-4 py-1"
-                                    title="Book Now"
-                                    onclick="window.location.href='https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services'">
+                                    title="Book Now">
                                     Book Now
                                 </button></li>
                         </ul>
@@ -128,9 +132,10 @@
             </div>
             <div class="hidden justify-self-end lg:block">
                 <button
+                    data-booking-trigger
+                    data-booking-url="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services"
                     class="cursor-pointer border-1 focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 border border-border-primary bg-background-alternative hover:bg-[url('./Assets/barbercolor.png')] bg-center text-black font-bold text-text-alternative px-6 py-2"
-                    title="Book Now"
-                    onclick="window.location.href='https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services'">
+                    title="Book Now">
                     Book Now
                 </button>
             </div>
@@ -152,9 +157,10 @@
                 </div>
                 <div class="mt-6 flex flex-wrap items-center justify-center gap-4 md:mt-8">
                     <button
+                        data-booking-trigger
+                        data-booking-url="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services"
                         class="bg-[url('./Assets/barbercolor.png')] bg-center text-black font-bold focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 cursor-pointer border border-border-primary bg-background-alternative text-text-alternative px-6 py-3 text-white"
-                        title="BOOK YOUR APPOINTMENT"
-                        onclick="window.location.href='https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services'">
+                        title="BOOK YOUR APPOINTMENT">
                         BOOK YOUR APPOINTMENT
                     </button>
                 </div>
@@ -325,13 +331,13 @@
                     their Flex Cut experience.
                 </p>
             </div>
-            <div class="relative ml-0 pb-20 md:pb-24">
-                <div class="relative overflow-hidden" role="region" aria-roledescription="carousel">
-                    <div class="relative pb-20 md:pb-24">
-                        <div>
-                            <div class="flex ml-0">
+            <div class="relative ml-0">
+                <div id="reviews-carousel" class="relative overflow-hidden" role="region"
+                    aria-roledescription="carousel" aria-label="Client reviews" tabindex="0">
+                    <div id="reviews-carousel-viewport" class="relative">
+                        <div id="reviews-carousel-track" class="flex ml-0">
                                 <div role="group" aria-roledescription="slide"
-                                    class="min-w-0 shrink-0 grow-0 basis-full pl-0 lg:basis-1/2 lg:pr-16">
+                                    class="reviews-carousel-slide min-w-0 shrink-0 grow-0 basis-full pl-0 lg:basis-1/2 lg:pr-16">
                                     <div class="mx-auto flex h-full max-w-lg flex-col justify-center">
                                         <div class="mb-6 flex md:mb-8">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -380,7 +386,7 @@
                                     </div>
                                 </div>
                                 <div role="group" aria-roledescription="slide"
-                                    class="min-w-0 shrink-0 grow-0 basis-full pl-0 lg:basis-1/2 lg:pr-16">
+                                    class="reviews-carousel-slide min-w-0 shrink-0 grow-0 basis-full pl-0 lg:basis-1/2 lg:pr-16">
                                     <div class="mx-auto flex h-full max-w-lg flex-col justify-center">
                                         <div class="mb-6 flex md:mb-8">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -432,7 +438,7 @@ Thanks Felix!&quot;
                                     </div>
                                 </div>
                                 <div role="group" aria-roledescription="slide"
-                                    class="min-w-0 shrink-0 grow-0 basis-full pl-0 lg:basis-1/2 lg:pr-16">
+                                    class="reviews-carousel-slide min-w-0 shrink-0 grow-0 basis-full pl-0 lg:basis-1/2 lg:pr-16">
                                     <div class="mx-auto flex h-full max-w-lg flex-col justify-center">
                                         <div class="mb-6 flex md:mb-8">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -484,7 +490,7 @@ Thanks Felix!&quot;
                                 </div>
 
                                 <div role="group" aria-roledescription="slide"
-                                    class="min-w-0 shrink-0 grow-0 basis-full pl-0 lg:basis-1/2 lg:pr-16">
+                                    class="reviews-carousel-slide min-w-0 shrink-0 grow-0 basis-full pl-0 lg:basis-1/2 lg:pr-16">
                                     <div class="mx-auto flex h-full max-w-lg flex-col justify-center">
                                         <div class="mb-6 flex md:mb-8">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -534,16 +540,6 @@ Thanks Felix!&quot;
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="absolute bottom-0 flex w-full items-center justify-between">
-                            <div class="mt-5 flex w-full items-start justify-start">
-                                <button
-                                    class="mx-[3px] inline-block size-2 rounded-full bg-neutral-light"></button><button
-                                    class="mx-[3px] inline-block size-2 rounded-full bg-neutral-light"></button><button
-                                    class="mx-[3px] inline-block size-2 rounded-full bg-neutral-light"></button><button
-                                    class="mx-[3px] inline-block size-2 rounded-full bg-neutral-light"></button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -600,9 +596,10 @@ Thanks Felix!&quot;
             </p>
             <div class="mt-6 flex items-center justify-center gap-4 md:mt-8">
                 <button
+                    data-booking-trigger
+                    data-booking-url="https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services"
                     class="hover:bg-[url('./Assets/barbercolor.png')] bg-center text-black font-bold :ring-border-primary cursor-pointer inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary bg-background-alternative text-text-alternative px-6 py-3"
-                    title="Book on Square"
-                    onclick="window.location.href='https://book.squareup.com/appointments/blmzonty6dawkp/location/LR9D01TAEXTM6/services'">
+                    title="Book on Square">
                     Book on Square
                 </button>
             </div>
@@ -642,6 +639,35 @@ Thanks Felix!&quot;
         </div>
     </footer>
 
+    <div id="barber-modal-overlay" aria-hidden="true">
+        <div id="barber-modal-panel" role="dialog" aria-modal="true" aria-labelledby="barber-modal-title"
+            aria-describedby="barber-modal-description">
+            <button id="barber-modal-close" type="button" aria-label="Close barber selection dialog">&#x2716;</button>
+            <h2 id="barber-modal-title" class="font-main text-3xl font-bold text-center md:text-4xl">
+                Choose Your Barber
+            </h2>
+            <p id="barber-modal-description" class="mt-3 text-center text-base md:text-md">
+                Select who you would like to book your appointment with.
+            </p>
+            <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
+                <div class="barber-option">
+                    <h3 class="font-main text-xl font-bold md:text-2xl">Flex Cuts</h3>
+                    <p class="mt-2 text-sm md:text-base">Regular appointments</p>
+                    <button id="barber-book-flex-cuts" type="button" class="barber-book-btn">
+                        Book with Flex Cuts
+                    </button>
+                </div>
+                <div class="barber-option">
+                    <h3 class="font-main text-xl font-bold md:text-2xl">Lou Gustavo</h3>
+                    <p class="mt-2 text-sm md:text-base">Available weekends only</p>
+                    <button id="barber-book-lou" type="button" class="barber-book-btn">
+                        Book with Lou
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         const burgerMenu = document.getElementById('burger-menu');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -655,6 +681,8 @@ Thanks Felix!&quot;
             mobileMenu.classList.add('hidden');
         });
     </script>
+    <script src="/Assets/barber-modal.js"></script>
+    <script src="/Assets/reviews-carousel.js"></script>
 
     <style type="text/tailwindcss">
         @theme {
