@@ -42,18 +42,42 @@
         document.body.classList.remove('barber-modal-open');
 
         if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
-            lastFocusedElement.focus();
+            var mobileMenu = document.getElementById('mobile-menu');
+            var triggerInClosedMenu = mobileMenu
+                && mobileMenu.contains(lastFocusedElement)
+                && (mobileMenu.hasAttribute('hidden') || mobileMenu.classList.contains('hidden'));
+
+            if (triggerInClosedMenu) {
+                var burgerMenu = document.getElementById('burger-menu');
+                if (burgerMenu) {
+                    burgerMenu.focus();
+                } else {
+                    lastFocusedElement.focus();
+                }
+            } else {
+                lastFocusedElement.focus();
+            }
+        }
+    }
+
+    function closeMobileMenuIfOpen() {
+        var mobileMenu = document.getElementById('mobile-menu');
+        var burgerMenu = document.getElementById('burger-menu');
+
+        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.setAttribute('hidden', '');
+        }
+
+        if (burgerMenu) {
+            burgerMenu.setAttribute('aria-expanded', 'false');
+            burgerMenu.setAttribute('aria-label', 'Open menu');
         }
     }
 
     function handleTriggerClick(event) {
         event.preventDefault();
-
-        var mobileMenu = document.getElementById('mobile-menu');
-        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-            mobileMenu.classList.add('hidden');
-        }
-
+        closeMobileMenuIfOpen();
         openModal(getTriggerUrl(event.currentTarget));
     }
 

@@ -25,3 +25,69 @@ input[type="password"],
 textarea {
     cursor: text;
 }
+
+@media (hover: none), (pointer: coarse) {
+    html,
+    body,
+    a,
+    button,
+    label,
+    select,
+    summary,
+    [role="button"],
+    .cursor-pointer,
+    .barber-book-btn,
+    #barber-modal-close {
+        cursor: auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="search"],
+    input[type="url"],
+    input[type="password"],
+    textarea {
+        cursor: text;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html,
+    body,
+    a,
+    button,
+    label,
+    select,
+    summary,
+    [role="button"],
+    .cursor-pointer,
+    .barber-book-btn,
+    #barber-modal-close {
+        cursor: auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="search"],
+    input[type="url"],
+    input[type="password"],
+    textarea {
+        cursor: text;
+    }
+}
+
+/* Keyboard focus for interactive elements that lack utility focus rings */
+a:focus-visible,
+button:focus-visible,
+[href]:focus-visible,
+[tabindex]:not([tabindex="-1"]):focus-visible {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+#home a:focus-visible,
+#home button:focus-visible {
+    outline-color: #fff;
+}
